@@ -42,6 +42,8 @@ Set at least one of these environment variables to that provider's admin or mana
 | `OPENROUTER_MANAGEMENT_KEY` | An OpenRouter management key, created on the Management API Keys page (openrouter.ai/settings/management-keys).                                                                   |
 | `XAI_MANAGEMENT_KEY`        | An xAI management key, from xAI Console → Settings → Management Keys.                                                                                                             |
 
+OpenAI asks which permissions a new admin key gets. **Read only** is enough: `check` only reads spend, and OpenAI accepted a Read only key when we ran it on 2026-11-22.
+
 Each key is sent only to its own provider's official address. Variables like `OPENAI_API_BASE_URL` are ignored, so a proxy setting can't redirect an admin key.
 
 Options for `check`:
